@@ -19,3 +19,46 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 */
+use std::os::raw::c_void;
+use std::os::raw::c_char;
+use std::os::raw::c_int;
+use webpage::Webpage;
+use webpage::WebpageOptions;
+use webpage::HTTP;
+use webpage::HTML;
+
+#[repr(C)]
+struct webpage_http_t {
+    // TODO
+}
+
+#[repr(C)]
+struct webpage_html_t {
+    // TODO
+}
+
+#[repr(C)]
+struct webpage_t {
+    http: webpage_http_t,
+    html: webpage_html_t
+}
+
+#[repr(C)]
+struct webpage_options_t {
+    // TODO
+}
+
+#[no_mangle]
+unsafe extern "C" fn webpage_from_url(url: *const c_char, options: *const webpage_options_t) /* -> webpage_t */ {
+    // TODO
+}
+
+#[no_mangle]
+unsafe extern "C" fn webpage_options_default() /* -> webpage_options_t */ {
+    // TODO
+}
+
+#[no_mangle]
+unsafe extern "C" fn webpage_http_fetch(url: *const c_char, options: *const webpage_options_t) /* -> webpage_http_t */ {
+    // TODO
+}
