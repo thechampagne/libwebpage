@@ -1,0 +1,19 @@
+[package]
+name = "webpage"
+version = "1.0.0"
+description = "A library to fetch info from a webpage"
+authors = ["XXIV"]
+homepage = "https://github.com/thechampagne/libwebpage"
+repository = "https://github.com/thechampagne/libwebpage"
+readme = "README.md"
+license = "MIT"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "webpage"
+crate-type =["cdylib","staticlib"]
+
+[dependencies]
+webpage = "1.5.0"
